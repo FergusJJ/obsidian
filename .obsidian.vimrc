@@ -23,12 +23,6 @@ nnoremap <C-u> <C-u>zz
 " Obsidian specific remaps
 """
 
-" math inline mode
-nnoremap <Space>m i$$<Left>
-
-" math block mode
-nnoremap <Space>M i$$$$<Left><Left>
-
 exmap followLink obcommand editor:follow-link
 nnoremap <Space>gd :followLink
 
@@ -44,3 +38,15 @@ nnoremap <Space>b :prevNote
 
 exmap openGraph obcommand graph:open
 nnoremap <Space>og :openGraph
+
+"""
+" Some LaTeX stuff
+"""
+" math inline mode
+nnoremap <Space>m i<Space>$$<Left>
+
+" math block mode
+nnoremap <Space>M i<Space>$$$$<Left><Left>
+
+inoremap <C-Space>v \vec{}<Left>
+
