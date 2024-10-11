@@ -32,10 +32,11 @@ nnoremap <Space>M $$$$<Left><Left>$
 exmap followLink obcommand editor:follow-link
 nnoremap <Space>gd :followLink
 
-exmap fuzzyfind obcommand switcher:open
+"from the 'another quick switcher' plugin"
+exmap fuzzyfind obcommand obsidian-another-quick-switcher:search-command_recent-search
 nnoremap <Space>pf :fuzzyfind
 
-exmap grepEverywhere obcommand search:open
+exmap grepEverywhere obcommand obsidian-another-quick-switcher:grep
 nnoremap <Space>ps :grepEverywhere
 
 exmap prevNote obcommand app:go-back
