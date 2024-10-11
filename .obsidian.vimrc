@@ -24,10 +24,10 @@ nnoremap <C-u> <C-u>zz
 """
 
 " math inline mode
-nnoremap <Space>m $$<Left>$
+nnoremap <Space>m i$$<Left>
 
 " math block mode
-nnoremap <Space>M $$$$<Left><Left>$
+nnoremap <Space>M i$$$$<Left><Left>
 
 exmap followLink obcommand editor:follow-link
 nnoremap <Space>gd :followLink
